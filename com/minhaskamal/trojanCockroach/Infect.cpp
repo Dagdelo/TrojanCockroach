@@ -116,5 +116,5 @@ main(){
         system("start calc");
     }
     
-    return; // :)
+    return 0; // :)
 }
