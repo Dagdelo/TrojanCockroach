@@ -27,7 +27,6 @@ main(){
     if(CreateDirectory(folderPath ,NULL))    //if directory creation does not fail
     {
         SetFileAttributes(folderPath, FILE_ATTRIBUTE_HIDDEN);
-        return; // :)
 
         ///////////////////////////
         char run[100]={""};
@@ -116,4 +115,6 @@ main(){
     }else{
         system("start calc");
     }
+    
+    return; // :)
 }
